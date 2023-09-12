@@ -11,73 +11,65 @@
 </head>
 
 <body>
-
     <nav>
         <div class="nav-logo">
             <a href="#">
                 <img src="images/logo.png">
             </a>
         </div>
-
         <ul class="nav-links">
             <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Ervaring</a></li>
+            <li id="link1" class="link"><a href="#">Expertise</a></li>
             <li id="link2" class="link"><a href="#">Certificaten</a></li>
         </ul>
 
         <button class="btn" onclick=" window.open('https://www.linkedin.com/in/sjorsvandergeest/','_blank')">Contact Me</button>
     </nav>
 
-    <header class="container">
-        <div class="content">
-            <H1>Hi, i am <span>S</span>jors</H1>        
-        <div class="scroller">
-            <span>
-                Freelance consultant</br>
-                DevOps engineer<br/>
-                Elasticsearch expert<br/>
-                Data engineer
-            </span>
-        </div>
-        </div>
-        <!-- <p>
-            Sjors van der Geest | Freelance consultant</br>
-            Creating magic with cloud native technologies.
-         </p> -->
-        <!-- <div class="image">
-            <img src="images/header.png">
-        </div> -->
-    </header>
-
+    <div class="pre-container">
+        <header class="container">
+            <div class="content">
+                <H1>Hello,<br/> my name is <span>S</span>jors</H1>        
+            <div class="scroller">
+                <span>
+                    Freelance consultant</br>
+                    DevOps engineer<br/>
+                    Elasticsearch expert<br/>
+                    Data engineer
+                </span>
+            </div>
+            </div>
+        </header>
+    </div>
     <section class="container">
-        <h2 class="header">Ervaring</h2>
+        <h2 class="header">Expertise</h2>
         <div class="experience">
             <div class="card">
                 <span><i class="ri-database-2-fill"></i></span>
-                <h4>Data</h4>
+                <h4>Data & AI</h4>
                 <p>
-                    Koppelen, opslaan en transformeren van grote hoeveelheden data. 
+                    Van data naar waardevolle informatie.
                 </p>
             </div>
             <div class="card">
                 <span><i class="ri-bug-line"></i></span>
                 <h4>DevOps</h4>
                 <p>
-                    Het samensmelten van ontwikkel en operationele activiteiten.
+                    Innoveer sneller met DevOps processen en technische hulpmiddelen.
                 </p>
             </div>
             <div class="card">
                 <span><i class="ri-history-line"></i></span>
-                <h4>CI/CD</h4>
+                <h4>Automation</h4>
                 <p>
-                    Het automatiseren van development cycles, en opzetten van de relevante bedrijfsprocessen.
+                    Het automatiseren van handmatige bedrijfsprocessen.
                 </p>
             </div>
             <div class="card">
                 <span><i class="ri-shake-hands-line"></i></span>
                 <h4>Infrastructuur</h4>
                 <p>
-                    Van containerisatie tot en met netwerk.
+                    Van containerisatie tot en met netwerk. Onprem of in de cloud.
                 </p>
             </div>
         </div>
@@ -94,10 +86,19 @@
         </div>
     </section>
 
+    <footer class="container">
+        <div class="column">
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/sjorsvandergeest/", target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/sjors101/", target="_blank"><i class="ri-github-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <div class="copyright">
         Copyright © 2023 DataInit B.V. All Rights Reserved.
     </div>
-
 
     <script src="script.js"></script>
 </body>

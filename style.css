@@ -34,7 +34,7 @@ nav{
 }
 
 .nav-logo{
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .nav-links{
@@ -79,16 +79,20 @@ nav{
     background-color: #9b4767;
 }
 
+.pre-container{
+    background: url('images/bg.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding: 5rem 2rem;
+    
+}
+
 .container{
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
-}
-
-.blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 50px #ce5081;
-    z-index: -100;
+    opacity: 1,5;
 }
 
 header{
