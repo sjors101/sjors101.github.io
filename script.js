@@ -1,4 +1,9 @@
-// Reveal elements as they enter the viewport
+// Progressive enhancement: only opt into the hidden-then-reveal animation
+// once JS is confirmed running. If this script fails to load (or an old
+// cached version runs), the `js` class is never added and all content
+// stays fully visible instead of being stuck at opacity 0.
+document.documentElement.classList.add('js');
+
 const revealables = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window) {
