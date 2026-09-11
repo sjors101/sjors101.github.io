@@ -4,100 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DataInit — freelance DevOps engineer, data & Elasticsearch specialist. Van data naar waardevolle informatie.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <title>DataInit</title>
+    <title>DataInit — Freelance DevOps &amp; Data Engineering</title>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="images/logo.png">
-            </a>
-        </div>
+    <nav id="top">
+        <a class="nav-logo" href="#top">
+            <img src="images/logo.png" alt="DataInit">
+        </a>
         <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Expertise</a></li>
-            <li id="link2" class="link"><a href="#">Certificaten</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#certificaten">Certifications</a></li>
         </ul>
-
-        <button class="btn" onclick=" window.open('https://www.linkedin.com/in/sjorsvandergeest/','_blank')">Contact Me</button>
+        <a class="btn" href="https://www.linkedin.com/in/sjorsvandergeest/" target="_blank" rel="noopener">
+            Contact <i class="ri-arrow-right-up-line"></i>
+        </a>
     </nav>
 
-    <div class="pre-container">
-        <header class="container">
-            <div class="content">
-                <H1>Hello,<br/> my name is <span>S</span>jors</H1>        
-            <div class="scroller">
-                <span>
-                    Freelance consultant</br>
-                    DevOps engineer<br/>
-                    Elasticsearch expert<br/>
-                    Data engineer
-                </span>
+    <main>
+        <header class="hero container">
+            <p class="eyebrow reveal">Freelance · Available for projects</p>
+            <h1 class="reveal">Hello, my name is <span>Sjors</span>.</h1>
+            <div class="hero-roles reveal">
+                <span class="static">I'm a&nbsp;</span>
+                <div class="scroller">
+                    <ul>
+                        <li>Freelance consultant</li>
+                        <li>DevOps engineer</li>
+                        <li>Elasticsearch expert</li>
+                        <li>Data engineer</li>
+                    </ul>
+                </div>
             </div>
+            <p class="hero-sub reveal">
+                I help organizations turn raw data into valuable insight — with robust
+                infrastructure, smart automation, and dependable DevOps processes.
+            </p>
+            <div class="hero-actions reveal">
+                <a class="btn" href="https://www.linkedin.com/in/sjorsvandergeest/" target="_blank" rel="noopener">
+                    Let's talk <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a class="btn btn-ghost" href="#expertise">View expertise</a>
+            </div>
+
+            <div class="terminal reveal" aria-hidden="true">
+                <div class="terminal-bar">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span class="terminal-title">sjors@datainit — zsh</span>
+                </div>
+                <pre class="terminal-body"><code><span class="c-prompt">$</span> terraform apply -auto-approve
+<span class="c-ok">Apply complete!</span> Resources: <span class="c-num">12</span> added, <span class="c-num">0</span> changed, <span class="c-num">0</span> destroyed.
+
+<span class="c-prompt">$</span> kubectl get pods -n production
+NAME                   READY   STATUS    RESTARTS
+data-pipeline-7f9c2    <span class="c-ok">1/1</span>     Running   0
+elastic-ingest-0       <span class="c-ok">1/1</span>     Running   0
+
+<span class="c-prompt">$</span> echo "Ready to ship."
+Ready to ship.<span class="cursor"></span></code></pre>
             </div>
         </header>
-    </div>
-    <section class="container">
-        <h2 class="header">Expertise</h2>
-        <div class="experience">
-            <div class="card">
-                <span><i class="ri-database-2-fill"></i></span>
-                <h4>Data & AI</h4>
-                <p>
-                    Van data naar waardevolle informatie.
-                </p>
-            </div>
-            <div class="card">
-                <span><i class="ri-bug-line"></i></span>
-                <h4>DevOps</h4>
-                <p>
-                    Innoveer sneller met DevOps processen en technische hulpmiddelen.
-                </p>
-            </div>
-            <div class="card">
-                <span><i class="ri-history-line"></i></span>
-                <h4>Automation</h4>
-                <p>
-                    Het automatiseren van handmatige bedrijfsprocessen.
-                </p>
-            </div>
-            <div class="card">
-                <span><i class="ri-shake-hands-line"></i></span>
-                <h4>Infrastructuur</h4>
-                <p>
-                    Van containerisatie tot en met netwerk. Onprem of in de cloud.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="container">
-        <h2 class="header">Certificaten</h2>
-        <div class="certs">
-            <img src="images/cka.png">
-            <img src="images/hashicorp.png">
-            <img src="images/azurede.png">
-            <img src="images/el.png">
-            <img src="images/el-a.png">
-        </div>
-    </section>
+        <section id="expertise" class="container">
+            <div class="section-head reveal">
+                <span class="tag">01 — What I do</span>
+                <h2>Expertise</h2>
+            </div>
+            <div class="experience">
+                <div class="card reveal">
+                    <span class="card-icon"><i class="ri-database-2-line"></i></span>
+                    <h4>Data &amp; AI</h4>
+                    <p>Turning raw data into valuable, actionable information.</p>
+                    <span class="card-tools">Elasticsearch · Python · Spark</span>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><i class="ri-terminal-box-line"></i></span>
+                    <h4>DevOps</h4>
+                    <p>Innovate faster with solid DevOps processes and tooling.</p>
+                    <span class="card-tools">Kubernetes · Docker · CI/CD</span>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><i class="ri-loop-right-line"></i></span>
+                    <h4>Automation</h4>
+                    <p>Automating manual, repetitive business processes end to end.</p>
+                    <span class="card-tools">Terraform · Ansible · GitOps</span>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><i class="ri-server-line"></i></span>
+                    <h4>Infrastructure</h4>
+                    <p>From containerization to networking — on-prem or in the cloud.</p>
+                    <span class="card-tools">Azure · Linux · Networking</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificaten" class="container">
+            <div class="section-head reveal">
+                <span class="tag">02 — Proven knowledge</span>
+                <h2>Certifications</h2>
+            </div>
+            <div class="certs reveal">
+                <div class="cert"><img src="images/cka.png" alt="Certified Kubernetes Administrator"></div>
+                <div class="cert"><img src="images/hashicorp.png" alt="HashiCorp Terraform"></div>
+                <div class="cert"><img src="images/azurede.png" alt="Azure Data Engineer"></div>
+                <div class="cert"><img src="images/el.png" alt="Elastic Certified Engineer"></div>
+                <div class="cert"><img src="images/el-a.png" alt="Elastic Certified Analyst"></div>
+            </div>
+        </section>
+
+        <section class="cta container reveal">
+            <h2>Ready to build together?</h2>
+            <p>Let's explore how I can solve your data and infrastructure challenges.</p>
+            <a class="btn" href="https://www.linkedin.com/in/sjorsvandergeest/" target="_blank" rel="noopener">
+                Get in touch <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </section>
+    </main>
 
     <footer class="container">
-        <div class="column">
-
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/sjorsvandergeest/", target="_blank"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="https://github.com/sjors101/", target="_blank"><i class="ri-github-fill"></i></a>
-            </div>
+        <div class="footer-brand">
+            <img src="images/logo.png" alt="DataInit">
+        </div>
+        <ul class="footer-links">
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#certificaten">Certifications</a></li>
+            <li><a href="https://www.linkedin.com/in/sjorsvandergeest/" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/sjorsvandergeest/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/sjors101/" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a>
         </div>
     </footer>
 
     <div class="copyright">
-        Copyright © 2023 DataInit B.V. All Rights Reserved.
+        © 2026 DataInit B.V. — All Rights Reserved.
     </div>
 
     <script src="script.js"></script>
